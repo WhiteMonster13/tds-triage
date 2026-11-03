@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "jurisdiction": "India, resident-payee TDS only",
+    "version": "2026-11-03-DRAFT",
+    "status": "ILLUSTRATIVE. Rates/thresholds as understood for FY/Tax Year 2026-27 from secondary sources. A qualified tax professional must verify every row against the Income-tax Act 2025 s.393 and CBDT notifications before real use.",
+    "note_2025_refs": "Table-item references under s.393(1) differ slightly between secondary sources; marked verify=true"
+  },
+  "categories": {
+    "194C_contractor": {"label":"Contractor / work contract (incl. advertising, transport hire w/ driver)","old_section":"194C","new_ref":"393(1) Table Sl.6(i)","verify":false,"rate_individual_huf":0.01,"rate_other":0.02,"threshold_single":30000,"threshold_annual":100000,"effective_from":"2026-04-01","definition":"Payment to a contractor for carrying out any work (including supply of labour) under a contract, incl. advertising and transport."},
+    "194J_professional": {"label":"Professional services (legal, accounting, engineering, architecture, medical, etc.)","old_section":"194J","new_ref":"393(1) Table Sl.6(iii)","verify":true,"rate_individual_huf":0.10,"rate_other":0.10,"threshold_single":null,"threshold_annual":50000,"effective_from":"2026-04-01","definition":"Fees for professional services by specified professions."},
+    "194J_technical": {"label":"Fees for technical services (non-professional)","old_section":"194J(1)(ba)/technical","new_ref":"393(1) Table Sl.6(ii)","verify":true,"rate_individual_huf":0.02,"rate_other":0.02,"threshold_single":null,"threshold_annual":50000,"effective_from":"2026-04-01","definition":"Managerial, technical or consultancy services (reduced 2% rate applies to technical services other than professional)."},
+    "194I_plant": {"label":"Rent - plant, machinery, equipment","old_section":"194I(a)","new_ref":"393(1) Table Sl.2(i)","verify":false,"rate_individual_huf":0.02,"rate_other":0.02,"threshold_single":null,"threshold_annual":600000,"effective_from":"2026-04-01","definition":"Rent for use of plant, machinery or equipment."},
+    "194I_building": {"label":"Rent - land, building, furniture","old_section":"194I(b)","new_ref":"393(1) Table Sl.2(ii)","verify":false,"rate_individual_huf":0.10,"rate_other":0.10,"threshold_single":null,"threshold_annual":600000,"effective_from":"2026-04-01","definition":"Rent for land, building, land appurtenant to a building, furniture or fittings."},
+    "194H_commission": {"label":"Commission or brokerage","old_section":"194H","new_ref":"393(1) Table Sl.1(ii)","verify":false,"rate_individual_huf":0.02,"rate_other":0.02,"threshold_single":null,"threshold_annual":20000,"effective_from":"2026-04-01","definition":"Commission or brokerage (not insurance commission)."},
+    "NONE": {"label":"No TDS category identified (e.g. outright purchase of goods)","old_section":null,"new_ref":null,"verify":false,"rate_individual_huf":0,"rate_other":0,"threshold_single":null,"threshold_annual":null,"effective_from":"2026-04-01","definition":"Outright purchase of goods, no service/rent/commission element. (s.194Q goods-purchase TDS out of scope in this prototype.)"}
+  },
+  "no_pan_rate": 0.20
+}
