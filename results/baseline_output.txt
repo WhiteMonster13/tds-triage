@@ -1,0 +1,16 @@
+﻿c01 exp=194J_professional  got=194J_professional  tds=20000   OK  
+c02 exp=194I_building      got=194I_building      tds=64000   OK  
+c03 exp=194I_plant         got=194I_plant         tds=14000   OK  
+c04 exp=REVIEW             got=-> human           tds=-       OK (review expected)  ['category not in rule table', 'low confidence', 'evidence not found in source text']
+c05 exp=194H_commission    got=194H_commission    tds=2000    OK  
+c06 exp=NONE               got=NONE               tds=0       OK  
+c07 exp=194C_contractor    got=194C_contractor    tds=6000    OK  
+c08 exp=194C_contractor    got=194C_contractor    tds=450     OK  
+c09 exp=194J_professional  got=194J_professional  tds=6000    OK  
+c10 exp=REVIEW             got=194I_building      tds=0       !! DANGEROUS WRONG AUTO-ANSWER  
+c11 exp=REVIEW             got=-> human           tds=-       OK (review expected)  ['category not in rule table', 'low confidence', 'evidence not found in source text']
+c12 exp=194J_professional  got=194J_professional  tds=20000   OK  
+c13 exp=194J_professional  got=-> human           tds=-       SAFE-FAIL (needless review)  ['category not in rule table', 'low confidence', 'evidence not found in source text']
+c14 exp=REVIEW             got=-> human           tds=-       OK (review expected)  ['category not in rule table', 'low confidence', 'evidence not found in source text']
+
+SUMMARY {'correct_auto': 9, 'wrong_auto': 1, 'correct_review': 3, 'missed_review(unneeded review)': 1}
